@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 01</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {  
+            /* Define que as bordas da tabela devem ser recolhidas em uma única borda */
+            border-collapse: collapse;
+
+            /* Define a largura */
+            width: 300px; 
+            /* Define a altura */
+            height: 300px;
+        }
+        
+        th {
+            background-color: #383838;
+            color: white;
+            /* Define a largura, estilo e cor da borda */
+            border: 1px solid #383838;
+        }
+
+        
+        td {
+            border: 1px solid gray;
+            /* Define um espaçamento interno  */
+            padding: 10px;   
+            /* Alinhamento horizontal */
+            text-align: center;
+            /* Alinhamento vertical */
+            vertical-align: middle;            
+        }
+        
+        
+        tr.linha-cabecalho{
+            /* Altura */
+            height: 20px;            
+        }
+
+        tr.linha{
+            background-color: lightgrey;
+        }
+
+        td.destaque {
+            background-color: yellow;
+        }
+
+        td.numero {
+            text-align: right;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Primeira tabela</h1>
+    <!-- 
+        ANATOMIA DA TABELA
+
+        TABLE
+            TR (linha) 
+                TD (dado) ou TH (cabeçalho
+     -->
+    <table>
+        <tr class="linha-cabecalho">
+            <th>&nbsp;</th>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td class="destaque">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <th>2</th>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>A3</td>
+            <td class="destaque">B3</td>
+            <td>C3</td>
+        </tr>
+                
+    </table>
+
+    
+    
+</body>
+</html>
